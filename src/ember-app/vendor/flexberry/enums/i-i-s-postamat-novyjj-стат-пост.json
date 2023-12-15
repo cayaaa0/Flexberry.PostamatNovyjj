@@ -2,7 +2,7 @@
   "nameSpace": "IIS.PostamatNovyjj",
   "className": "СтатПост",
   "enumObjects": {
-    "1": "",
-    "2": ""
+    "1": "Работает",
+    "2": "Не работает"
   }
 }

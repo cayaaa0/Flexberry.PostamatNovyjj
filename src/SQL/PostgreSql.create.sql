@@ -15,7 +15,7 @@ CREATE TABLE Логистика (
 CREATE TABLE Постамат (
  primaryKey UUID NOT NULL,
  НомерПост INT NULL,
- СтатПост VARCHAR(1) NULL,
+ СтатПост VARCHAR(11) NULL,
  Адрес UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
@@ -76,7 +76,7 @@ CREATE TABLE Транзакция (
  Номер INT NULL,
  Дата TIMESTAMP(3) NULL,
  Время VARCHAR(255) NULL,
- Оплата VARCHAR(1) NULL,
+ Оплата VARCHAR(15) NULL,
  Сумма DOUBLE PRECISION NULL,
  Получатель UUID NOT NULL,
  PRIMARY KEY (primaryKey));

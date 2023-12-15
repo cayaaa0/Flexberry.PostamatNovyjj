@@ -23,7 +23,7 @@ CREATE TABLE [Постамат] (
 
 	 [НомерПост] INT  NULL,
 
-	 [СтатПост] VARCHAR(1)  NULL,
+	 [СтатПост] VARCHAR(11)  NULL,
 
 	 [Адрес] UNIQUEIDENTIFIER  NOT NULL,
 
@@ -124,7 +124,7 @@ CREATE TABLE [Транзакция] (
 
 	 [Номер] INT  NULL,
 
-	 [Оплата] VARCHAR(1)  NULL,
+	 [Оплата] VARCHAR(15)  NULL,
 
 	 [Сумма] FLOAT  NULL,
 

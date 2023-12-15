@@ -12,6 +12,7 @@ namespace IIS.PostamatNovyjj
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,16 +32,19 @@ namespace IIS.PostamatNovyjj
         // *** Start programmer edit section *** (Оплата.1 CustomAttributes)
 
         // *** End programmer edit section *** (Оплата.1 CustomAttributes)
+        [Caption("Оплачено")]
         1,
         
         // *** Start programmer edit section *** (Оплата.2 CustomAttributes)
 
         // *** End programmer edit section *** (Оплата.2 CustomAttributes)
+        [Caption("Возврат средств")]
         2,
         
         // *** Start programmer edit section *** (Оплата.3 CustomAttributes)
 
         // *** End programmer edit section *** (Оплата.3 CustomAttributes)
+        [Caption("Ожидает оплаты")]
         3,
     }
 }

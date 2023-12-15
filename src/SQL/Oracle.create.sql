@@ -26,7 +26,7 @@ CREATE TABLE "Постамат"
 
 	"НомерПост" NUMBER(10) NULL,
 
-	"СтатПост" NVARCHAR2(1) NULL,
+	"СтатПост" NVARCHAR2(11) NULL,
 
 	"Адрес" RAW(16) NOT NULL,
 
@@ -141,7 +141,7 @@ CREATE TABLE "Транзакция"
 
 	"Время" NVARCHAR2(255) NULL,
 
-	"Оплата" NVARCHAR2(1) NULL,
+	"Оплата" NVARCHAR2(15) NULL,
 
 	"Сумма" FLOAT(126) NULL,
 
