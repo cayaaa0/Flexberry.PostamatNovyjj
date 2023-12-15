@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-postamat-novyjj-получатель-e",
+  "editForm": "i-i-s-postamat-novyjj-получатель-e",
+  "external": false,
+  "caption": "Получатель",
+  "name": "IISPostamatNovyjjПолучательL",
+  "className": "ПолучательL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat-novyjj-получатель",
+      "modelProjection": "ПолучательL"
+    }
+  ]
+}

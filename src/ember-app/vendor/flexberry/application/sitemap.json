@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Postamat novyjj",
+  "applicationTitle": "Postamat novyjj",
+  "items": [
+    {
+      "link": null,
+      "menuName": "postamat-novyjj",
+      "caption": "PostamatNovyjj",
+      "title": "PostamatNovyjj",
+      "children": [
+        {
+          "link": "i-i-s-postamat-novyjj-логистика-l",
+          "menuName": null,
+          "caption": "Логистика",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-постамат-l",
+          "menuName": null,
+          "caption": "Постамат",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-код-l",
+          "menuName": null,
+          "caption": "Код",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-адрес-l",
+          "menuName": null,
+          "caption": "Адрес",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-хранение-l",
+          "menuName": null,
+          "caption": "Хранение",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-получатель-l",
+          "menuName": null,
+          "caption": "Получатель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-транзакция-l",
+          "menuName": null,
+          "caption": "Транзакция",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-postamat-novyjj-служба-доставки-l",
+          "menuName": null,
+          "caption": "Служба доставки",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

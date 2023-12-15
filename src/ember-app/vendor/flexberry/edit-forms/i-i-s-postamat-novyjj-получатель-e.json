@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Получатель",
+  "name": "IISPostamatNovyjjПолучательE",
+  "className": "ПолучательE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat-novyjj-получатель",
+      "modelProjection": "ПолучательE"
+    }
+  ]
+}

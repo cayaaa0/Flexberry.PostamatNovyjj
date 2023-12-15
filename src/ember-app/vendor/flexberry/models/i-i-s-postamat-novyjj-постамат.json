@@ -1,0 +1,185 @@
+﻿{
+  "name": "IISPostamatNovyjjПостамат",
+  "modelName": "i-i-s-postamat-novyjj-постамат",
+  "className": "Постамат",
+  "nameSpace": "IIS.PostamatNovyjj",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерПост",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статПост",
+      "type": "i-i-s-postamat-novyjj-стат-пост",
+      "flexberryType": "СтатПост",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "адрес",
+      "relatedTo": "i-i-s-postamat-novyjj-адрес",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "ячейка",
+      "relatedTo": "i-i-s-postamat-novyjj-ячейка",
+      "inverse": "постамат"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПостаматE",
+      "modelName": "i-i-s-postamat-novyjj-постамат",
+      "attrs": [
+        {
+          "name": "номерПост",
+          "caption": "Номер постамата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статПост",
+          "caption": "Статус постамата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Адрес",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Адрес.СлужбаДоставки",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование службы доставки",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "службаДоставки",
+              "relatedTo": "i-i-s-postamat-novyjj-служба-доставки",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Адрес",
+          "name": "адрес",
+          "relatedTo": "i-i-s-postamat-novyjj-адрес",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ЯчейкаE",
+          "caption": "Ячейка",
+          "name": "ячейка",
+          "relatedTo": "i-i-s-postamat-novyjj-ячейка",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПостаматL",
+      "modelName": "i-i-s-postamat-novyjj-постамат",
+      "attrs": [
+        {
+          "name": "номерПост",
+          "caption": "Номер постамата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статПост",
+          "caption": "Стат постамата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Адрес",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Адрес.СлужбаДоставки",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование службы доставки",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "службаДоставки",
+              "relatedTo": "i-i-s-postamat-novyjj-служба-доставки",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "адрес",
+          "relatedTo": "i-i-s-postamat-novyjj-адрес",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

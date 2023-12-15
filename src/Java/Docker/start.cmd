@@ -1,0 +1,1 @@
+docker-compose -p postamatnovyjj-java up -d

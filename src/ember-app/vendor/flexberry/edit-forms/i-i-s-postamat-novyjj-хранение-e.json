@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "логистика",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "Посылка.Логистика",
+      "projection": "ЛогистикаL",
+      "detailModelName": "i-i-s-postamat-novyjj-посылка"
+    },
+    {
+      "master": "транзакция",
+      "displayAttributeName": "время",
+      "required": true,
+      "relationName": "Посылка.Транзакция",
+      "projection": "ТранзакцияL",
+      "detailModelName": "i-i-s-postamat-novyjj-посылка"
+    },
+    {
+      "master": "код",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "Посылка.Код",
+      "projection": "КодL",
+      "detailModelName": "i-i-s-postamat-novyjj-посылка"
+    }
+  ],
+  "external": false,
+  "caption": "Хранение",
+  "name": "IISPostamatNovyjjХранениеE",
+  "className": "ХранениеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat-novyjj-хранение",
+      "modelProjection": "ХранениеE"
+    }
+  ]
+}
