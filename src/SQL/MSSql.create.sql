@@ -10,7 +10,7 @@ CREATE TABLE [Логистика] (
 
 	 [Номер] INT  NULL,
 
-	 [Состояние] VARCHAR(1)  NULL,
+	 [Состояние] VARCHAR(15)  NULL,
 
 	 [СлужбаДоставки] UNIQUEIDENTIFIER  NOT NULL,
 
@@ -62,7 +62,7 @@ CREATE TABLE [Посылка] (
 
 	 [НомПосылки] INT  NULL,
 
-	 [Статус] VARCHAR(1)  NULL,
+	 [Статус] VARCHAR(8)  NULL,
 
 	 [Код] UNIQUEIDENTIFIER  NOT NULL,
 
@@ -94,7 +94,7 @@ CREATE TABLE [Ячейка] (
 
 	 [НомерЯчейки] INT  NULL,
 
-	 [Статус] VARCHAR(1)  NULL,
+	 [Статус] VARCHAR(8)  NULL,
 
 	 [Хранение] UNIQUEIDENTIFIER  NOT NULL,
 

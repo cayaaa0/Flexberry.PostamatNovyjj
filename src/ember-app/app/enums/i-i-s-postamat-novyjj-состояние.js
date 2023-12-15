@@ -1,11 +1,11 @@
 import { createEnum } from 'ember-flexberry-data/utils/enum-functions';
 
 export default createEnum({
-  1: '',
-  2: '',
-  3: '',
-  4: '',
-  5: '',
-  6: '',
-  7: ''
+  1: 'Получена',
+  2: 'В пути',
+  3: 'Готова к выдаче',
+  4: 'Отправлена',
+  5: 'Создана',
+  6: 'Прибыла',
+  7: 'Возврат'
 });

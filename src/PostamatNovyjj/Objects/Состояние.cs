@@ -12,6 +12,7 @@ namespace IIS.PostamatNovyjj
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,39 +29,46 @@ namespace IIS.PostamatNovyjj
     public enum Состояние
     {
         
-        // *** Start programmer edit section *** (Состояние.1 CustomAttributes)
-
-        // *** End programmer edit section *** (Состояние.1 CustomAttributes)
-        1,
-        
         // *** Start programmer edit section *** (Состояние.3 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.3 CustomAttributes)
+        [Caption("Готова к выдаче")]
         3,
+        
+        // *** Start programmer edit section *** (Состояние.1 CustomAttributes)
+
+        // *** End programmer edit section *** (Состояние.1 CustomAttributes)
+        [Caption("Получена")]
+        1,
         
         // *** Start programmer edit section *** (Состояние.4 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.4 CustomAttributes)
+        [Caption("Отправлена")]
         4,
         
         // *** Start programmer edit section *** (Состояние.5 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.5 CustomAttributes)
+        [Caption("Создана")]
         5,
         
         // *** Start programmer edit section *** (Состояние.6 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.6 CustomAttributes)
+        [Caption("Прибыла")]
         6,
         
         // *** Start programmer edit section *** (Состояние.2 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.2 CustomAttributes)
+        [Caption("В пути")]
         2,
         
         // *** Start programmer edit section *** (Состояние.7 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.7 CustomAttributes)
+        [Caption("Возврат")]
         7,
     }
 }

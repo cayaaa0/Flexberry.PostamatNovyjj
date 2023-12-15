@@ -7,7 +7,7 @@ CREATE TABLE Логистика (
  primaryKey UUID NOT NULL,
  Номер INT NULL,
  Информация VARCHAR(255) NULL,
- Состояние VARCHAR(1) NULL,
+ Состояние VARCHAR(15) NULL,
  СлужбаДоставки UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
@@ -36,7 +36,7 @@ CREATE TABLE Адрес (
 
 CREATE TABLE Посылка (
  primaryKey UUID NOT NULL,
- Статус VARCHAR(1) NULL,
+ Статус VARCHAR(8) NULL,
  НомерПост INT NULL,
  НомПосылки INT NULL,
  НомерЯчейки INT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE Хранение (
 CREATE TABLE Ячейка (
  primaryKey UUID NOT NULL,
  НомерЯчейки INT NULL,
- Статус VARCHAR(1) NULL,
+ Статус VARCHAR(8) NULL,
  Хранение UUID NOT NULL,
  Постамат UUID NOT NULL,
  PRIMARY KEY (primaryKey));

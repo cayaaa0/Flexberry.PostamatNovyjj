@@ -11,7 +11,7 @@ CREATE TABLE "Логистика"
 
 	"Информация" NVARCHAR2(255) NULL,
 
-	"Состояние" NVARCHAR2(1) NULL,
+	"Состояние" NVARCHAR2(15) NULL,
 
 	"СлужбаДоставки" RAW(16) NOT NULL,
 
@@ -65,7 +65,7 @@ CREATE TABLE "Посылка"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Статус" NVARCHAR2(1) NULL,
+	"Статус" NVARCHAR2(8) NULL,
 
 	"НомерПост" NUMBER(10) NULL,
 
@@ -107,7 +107,7 @@ CREATE TABLE "Ячейка"
 
 	"НомерЯчейки" NUMBER(10) NULL,
 
-	"Статус" NVARCHAR2(1) NULL,
+	"Статус" NVARCHAR2(8) NULL,
 
 	"Хранение" RAW(16) NOT NULL,
 

@@ -12,6 +12,7 @@ namespace IIS.PostamatNovyjj
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,14 +29,16 @@ namespace IIS.PostamatNovyjj
     public enum СтатЯчейк
     {
         
-        // *** Start programmer edit section *** (СтатЯчейк.2 CustomAttributes)
-
-        // *** End programmer edit section *** (СтатЯчейк.2 CustomAttributes)
-        2,
-        
         // *** Start programmer edit section *** (СтатЯчейк.1 CustomAttributes)
 
         // *** End programmer edit section *** (СтатЯчейк.1 CustomAttributes)
+        [Caption("Свободна")]
         1,
+        
+        // *** Start programmer edit section *** (СтатЯчейк.2 CustomAttributes)
+
+        // *** End programmer edit section *** (СтатЯчейк.2 CustomAttributes)
+        [Caption("Занята")]
+        2,
     }
 }
