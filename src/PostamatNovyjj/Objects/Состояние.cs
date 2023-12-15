@@ -29,41 +29,41 @@ namespace IIS.PostamatNovyjj
     public enum Состояние
     {
         
-        // *** Start programmer edit section *** (Состояние.3 CustomAttributes)
-
-        // *** End programmer edit section *** (Состояние.3 CustomAttributes)
-        [Caption("Готова к выдаче")]
-        3,
-        
         // *** Start programmer edit section *** (Состояние.1 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.1 CustomAttributes)
-        [Caption("Получена")]
+        [Caption("Готова к выдаче")]
         1,
+        
+        // *** Start programmer edit section *** (Состояние.2 CustomAttributes)
+
+        // *** End programmer edit section *** (Состояние.2 CustomAttributes)
+        [Caption("Получена")]
+        2,
+        
+        // *** Start programmer edit section *** (Состояние.3 CustomAttributes)
+
+        // *** End programmer edit section *** (Состояние.3 CustomAttributes)
+        [Caption("Отправлена")]
+        3,
         
         // *** Start programmer edit section *** (Состояние.4 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.4 CustomAttributes)
-        [Caption("Отправлена")]
+        [Caption("Создана")]
         4,
         
         // *** Start programmer edit section *** (Состояние.5 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.5 CustomAttributes)
-        [Caption("Создана")]
+        [Caption("Прибыла")]
         5,
         
         // *** Start programmer edit section *** (Состояние.6 CustomAttributes)
 
         // *** End programmer edit section *** (Состояние.6 CustomAttributes)
-        [Caption("Прибыла")]
-        6,
-        
-        // *** Start programmer edit section *** (Состояние.2 CustomAttributes)
-
-        // *** End programmer edit section *** (Состояние.2 CustomAttributes)
         [Caption("В пути")]
-        2,
+        6,
         
         // *** Start programmer edit section *** (Состояние.7 CustomAttributes)
 
